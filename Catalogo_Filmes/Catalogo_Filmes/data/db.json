@@ -1,0 +1,13 @@
+{
+    "movies": [
+        {
+            "id": "1",
+            "title": "Kill Bill",
+            "category": "Ação",
+            "year": "2003", 
+            "Note": "4.3",
+            "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/48/24/20122126.jpg",
+            "synopsis": "conta a história de Beatrix Kiddo, uma ex-assassina que acorda de um coma de quatro anos e busca vingança contra seu antigo grupo que tentou matá-la no dia de seu casamento"
+        }
+    ]
+}
