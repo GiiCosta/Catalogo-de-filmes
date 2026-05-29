@@ -67,8 +67,8 @@ input, textarea{
 
 input:focus, textarea:focus{
   outline: none;
-  border-color: #646cff;
-  box-shadow: 0 0 10px rgba(100, 108, 255, 0.5);
+  border-color: #fca23b;
+  box-shadow: 0 0 10px rgba(255, 123, 0, 0.5);
 }
 textarea{
   resize: none;
@@ -80,7 +80,7 @@ input::placeholder textarea::placeholder{
 }
 
 button{
-  background: linear-gradient(135deg, #646cff, #4f46e5);
+  background: linear-gradient(135deg, #fca23b, #f77002);
   color: white;
   padding: 14px 20px;
   border: none;
@@ -89,12 +89,12 @@ button{
   font-size: 1rem;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 4 12px rgba(100, 108, 255, 0.4);
+  box-shadow: 0 4 12px rgba(255, 123, 0, 0.4);
 }
 
 button:hover{
   transform: translate(-3y);
-  box-shadow: 0 8px 20px rgba(100, 108, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(255, 123, 0, 0.4);
 }
 
 button:active{
@@ -125,7 +125,7 @@ button:active{
 
 .movie-card img{
   width: 100%;
-  height: 320px;
+  height: 420px;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;

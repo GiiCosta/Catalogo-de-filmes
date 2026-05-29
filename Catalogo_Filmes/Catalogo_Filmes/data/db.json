@@ -5,9 +5,28 @@
       "title": "Kill Bill",
       "category": "Ação",
       "year": "2003",
-      "Note": "4",
+      "Note": "5",
       "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/48/24/20122126.jpg",
       "synopsis": "conta a história de Beatrix Kiddo, uma ex-assassina que acorda de um coma de quatro anos e busca vingança contra seu antigo grupo que tentou matá-la no dia de seu casamento."
+    },
+    {
+      "title": "Cabras da Peste",
+      "category": "Ação, Comédia",
+      "year": "2021",
+      "note": "5",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.uk2r1XyKzq9G7QeD74m__gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "synopsis": "Em Cabras da Peste, acompanhamos a história do cearense Bruceuilis (Edmilson Filho) e do paulista Trindade (Matheus Nachtergaele), dois policias totalmente incompatíveis que são forçados a trabalhar juntos para resgatar a Celestina, uma cabra que é considerada o patrimônio do Ceará. Durante a investigação, os dois descobrem que o sumiço do animal está interligado com as ações criminosas de Luva Branca, o maior alvo da polícia de São Paulo. Juntos, Bruceuilis e Trindade precisarão desmascarar a quadrilha comandada pelo traficante de entorpecentes e mostrar que ainda são policiais de verdade. No estilo buddy cop, o filme apresenta aquele clássico toque à brasileira.",
+      "id": "otP_gT87Qio"
+    },
+    {
+      "title": "De Repente 30",
+      "category": "Comédia",
+      "year": "2004",
+      "note": "5",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.PuPVIaD_gGRWFK9ZgHCpJwHaK2?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "synopsis": "De Repente 30 acompanha Jenna, uma adolescente insatisfeita que, após um pedido mágico no seu 13º aniversário, acorda como uma mulher de 30 anos, vivendo a vida que acreditava querer. Encantada com as possibilidades, ela logo percebe que suas escolhas têm consequências e que talvez tenha perdido o que realmente importava. Com muito humor, romance e nostalgia dos anos 80, é uma comédia leve e cativante, elogiada pela atuação carismática de Jennifer Garner, indicada para quem gosta de histórias divertidas e otimistas.",
+      "id": "MSo-4J2CzmM"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
