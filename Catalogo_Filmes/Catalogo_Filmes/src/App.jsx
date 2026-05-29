@@ -1,15 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
+import MovieForm from './componentes/MovieForm'
+import MovieList from './componentes/MovieList'
 import './App.css'
 
+const url ="http://localhost:3001/movie";
+
+
 function App() {
-  const [useEffect, useState] = useState(0)
+  const [movies, setMovies] = useState([])
+
+  useEffect(()=> {
+    async function getMovies(){
+      const response = await fetch(url);
+      const data = await response.json(); 
+
+      console.log(data);
+      setMovies(data);
+    }
+    getMovies();
+  },[]);
+
+
+  const createMovies = async (movie) =>{
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(movie),
+    });
+
+    const addedMovie = await response.json();
+    setMovies((prevMovies) => [...prevMovies, addedMovie]);
+  };
+
 
   return (
-    <div>
-      
+    <div className='App'>
+      <h1>Catálogo de Filmes</h1>
+      <MovieForm handleSubmit={createMovies}/>
+      <MovieList movies={movies}/>
     </div>
+
   )
 }
 

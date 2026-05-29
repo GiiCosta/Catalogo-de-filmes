@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-const MovieForm = (handelSubmit) => {
+const MovieForm = ({handleSubmit}) => {
   const [title, setTitle] = useState ("");
   const [category, setCategory] = useState ("");
   const [year, setYear] = useState ("");
@@ -9,17 +9,24 @@ const MovieForm = (handelSubmit) => {
   const [synopsis, setSynopsis] = useState ("");
 
   const submitForm = (e) =>{
-    e.preventDefaul();
+    e.preventDefault();
 
     const movie = { 
-      title,
-      category,
-      year,
-      note,
-      image,
-      synopsis
+        title,
+        category,
+        year,
+        note,
+        image,
+        synopsis
     };
-    handelSubmit(movie)
+    handleSubmit(movie)
+
+    setTitle("");
+    setCategory("");
+    setYear("");
+    setNote("");
+    setImage("");
+    setSynopsis("");
   };
 
   return (
@@ -39,26 +46,24 @@ const MovieForm = (handelSubmit) => {
 
           <label>
             <span>Ano de lançamento</span>
-            <input type="text" value={year || ""} onChange={(e) => setYear(e.target.value)}/>
+            <input type="number" value={year || ""} onChange={(e) => setYear(e.target.value)}/>
           </label>
           
           <label>
             <span>Nota</span>
-            <input type="text" value={note || ""} onChange={(e) => setNote(e.target.value)}/>
+            <input type="number" value={note || ""} onChange={(e) => setNote(e.target.value)}/>
           </label>
 
           <label>
-            <span>URL da imagem/poster,</span>
+            <span>Poster</span>
             <input type="text" value={image || ""} onChange={(e) => setImage(e.target.value)}/>
           </label>
 
           <label>
             <span>Sinopse</span>
-            <input type="text" value={synopsis || ""} onChange={(e) => setSynopsis(e.target.value)}/>
+            <textarea type="text" value={synopsis || ""} onChange={(e) => setSynopsis(e.target.value)}/>
           </label>
-
-          <input type="button" value="Cadastrar" />
-          
+          <button type="submit">Cadastrar</button>
       </form>
     </div>
   )
